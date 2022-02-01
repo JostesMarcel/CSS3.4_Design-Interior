@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+/* no scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
 h1, h2{
     font-family: 'Lora', serif;
     letter-spacing: 3px;
@@ -28,40 +32,33 @@ header{
     display: flex;
     justify-content: flex-end;
 }
+header section:nth-of-type(1){
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header section:nth-of-type(1) h1{
+    padding-bottom: 20px;
+    font-size: 5em;
+}
 header section:nth-of-type(2){
     background: url(../img/design-interior-1.jpg) no-repeat center/cover;
     width: 60%;
 }
-header section:nth-of-type(1){
-    width: 25%;
-    align-self: center;
-    margin-right: 8%;
-}
-header section:nth-of-type(1) h1{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-    font-size: 5em;
-}
-header section:nth-of-type(1) h2{
-    display: flex;
-    justify-content: center;
-}
 /* Sticky Menü */
 .stickyMenu {
     background-color: #2e2e2e;
-    height: 15vh;
     display: flex;
     position: sticky;
     top: 0;
     align-items: center;
     justify-content: space-between;
-    
+    line-height: 0;
 }
 .logo{
-    width: 5%;
-    height: 40%;
-    margin-left: 1%;
+    width: 100%;
 }
 .stickyMenu article{
     display: flex;
@@ -111,21 +108,23 @@ section:nth-of-type(2) article:nth-of-type(2) p{
 }
 .gallery{
     display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 5%;
 }
 .gallery img{
     width: 100%;
-    padding: 0 10%;
 }
 .gallery figcaption{
     text-align: center;
 }
 .video{
     text-align: center;
-    margin: 5% 0;
+    margin: 5% 0 10%;
 }
 .forms{
     display: flex;
-    height: 60vh;
+    height: 50vh;
     background-color: #2e2e2e;
     color: #fff;
 }
@@ -138,19 +137,22 @@ section:nth-of-type(2) article:nth-of-type(2) p{
     font-size: 1.2em
 }
 .forms article:nth-of-type(2){
+    margin: 5% auto;
+}
+.forms article:nth-of-type(2) form{
     display: flex;
     flex-flow: column;
-    margin: auto 0 auto 15%;
+    margin: 100% 0;
 }
-.forms article:nth-of-type(2) label{
+.forms article:nth-of-type(2) form label{
     font-size: 1.5em;
 }
-.forms article:nth-of-type(2) input:not(input:nth-of-type(4)){
-    width: 300%;
+.forms article:nth-of-type(2) form input:not(input:nth-of-type(4)){
+    width: 250%;
     line-height: 30px;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
-.forms article:nth-of-type(2) input:nth-of-type(4){
+.forms article:nth-of-type(2) form input:nth-of-type(4){
     padding: 5%;
     margin-top: 10%;
 }
@@ -159,7 +161,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 5vh;
     color: #fff;
     padding: 0 2%;
 }

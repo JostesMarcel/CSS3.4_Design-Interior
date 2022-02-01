@@ -21,7 +21,7 @@
     </header>
     <main>
         <section class="stickyMenu">
-            <img class="logo" src="assets/img/logo.png" alt="Logo">
+            <a href="#"><img class="logo" src="assets/img/logo.png" alt="Logo"></a>
             <article>
                 <p><a href="">H&H</a></p>
                 <p><a href="">OUR STORY</a></p>
@@ -45,12 +45,27 @@
             <p>Take a look at some of our featured picks that have made editorial debuts</p>
         </section>
         <section class="gallery">
-            <figure><img src="assets/img/features1.jpg" alt=""><figcaption><p>Image by Michal Jarmoluk from<br> Pixabay</p></figcaption></figure>
-            <figure><img src="assets/img/features2.jpg" alt=""><figcaption><p>Image by StockSnap from Pixabay</p></figcaption></figure>
-            <figure><img src="assets/img/features3.jpg" alt=""><figcaption><p></p>Image by miapirttila from Pixabay</figcaption></figure>
+            <figure>
+                <img src="assets/img/features1.jpg" alt="">
+                <figcaption>
+                    <p>Image by Michal Jarmoluk from<br>Pixabay</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="assets/img/features2.jpg" alt="">
+                <figcaption>
+                    <p>Image by StockSnap from Pixabay</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="assets/img/features3.jpg" alt="">
+                <figcaption>
+                    <p>Image by miapirttila from Pixabay</p>
+                </figcaption>
+            </figure>
         </section>
         <section class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GI71fXmRrLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="520" height="315" src="https://www.youtube.com/embed/GI71fXmRrLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <section class="forms">
             <article>
@@ -59,13 +74,15 @@
                 <p>If you would like to receive our monthly catalogue subscribe by filling in the form with your name and email address</p>
             </article>
             <article>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter Name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter email">
-                <label for="message">Message</label>
-                <input type="text" name="message" id="message" placeholder="Optional">
-                <input type="submit" value="Submit"    id="submit" onclick="getInputValue()">
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                    <label for="mail">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message" placeholder="Optional">
+                    <input type="submit" value="Submit" id="submit" onclick="getInputValue()">
+                </form>
             </article>
         </section>
         <footer>
